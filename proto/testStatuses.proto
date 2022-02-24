@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "error.tests.grpc";
+
+message emptyRequest {
+}
+message emptyResponse {
+}
+
+service TestGrpcStatusService {
+	// Grpc.Core.StatusCode
+	rpc testStatusOK (emptyRequest) returns (emptyResponse);
+	rpc testStatusCancelled (emptyRequest) returns (emptyResponse);
+	rpc testStatusUnknown (emptyRequest) returns (emptyResponse);
+	rpc testStatusInvalidArgument (emptyRequest) returns (emptyResponse);
+	rpc testStatusDeadlineExceeded (emptyRequest) returns (emptyResponse);
+	rpc testStatusNotFound (emptyRequest) returns (emptyResponse);
+	rpc testStatusAlreadyExists (emptyRequest) returns (emptyResponse);
+	rpc testStatusPermissionDenied (emptyRequest) returns (emptyResponse);
+	rpc testStatusUnauthenticated (emptyRequest) returns (emptyResponse);
+	rpc testStatusResourceExhausted (emptyRequest) returns (emptyResponse);
+	rpc testStatusFailedPrecondition (emptyRequest) returns (emptyResponse);
+	rpc testStatusAborted (emptyRequest) returns (emptyResponse);
+	rpc testStatusOutOfRange (emptyRequest) returns (emptyResponse);
+	rpc testStatusUnimplemented (emptyRequest) returns (emptyResponse);
+	rpc testStatusInternal (emptyRequest) returns (emptyResponse);
+	rpc testStatusUnavailable (emptyRequest) returns (emptyResponse);
+	rpc testStatusDataLoss (emptyRequest) returns (emptyResponse);
+}
