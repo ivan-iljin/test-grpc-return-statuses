@@ -12,3 +12,5 @@ Run from the repo root:
 ```
 dotnet run
 ```
+
+![obraz](https://user-images.githubusercontent.com/77777672/156224237-eadb70a7-52b7-49fe-a5f5-ee25fd4ddbb9.png)
